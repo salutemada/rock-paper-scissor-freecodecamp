@@ -18,9 +18,9 @@ function returnImg(choice){
     imgRock.setAttribute('src', "https://img.icons8.com/color/100/000000/hand-rock.png");
     imgPaper.setAttribute('src', "https://img.icons8.com/fluent/100/000000/hand.png");
     imgScissors.setAttribute('src', "https://img.icons8.com/color/100/000000/hand-scissors.png");
-    imgRock.classList.add('choice', 'delete', 'verify');
-    imgPaper.classList.add('choice', 'delete', 'verify');
-    imgScissors.classList.add('choice', 'delete', 'verify');
+    imgRock.classList.add('choice', 'delete');
+    imgPaper.classList.add('choice', 'delete');
+    imgScissors.classList.add('choice', 'delete');
     
     if(choice === 'rock' ){  return imgRock}
     if(choice === 'paper' ){  return imgPaper}

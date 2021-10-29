@@ -7,17 +7,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    font-size: 14px;
+}
 
 html{
     --colorTitle : #25272E;
-
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 body{
     background: var(--colorTitle);
     color: white; 
     font-family: 'Asap', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
    
+}
+img {
+    max-width: 100%;
+}
+main {
+    max-width: 95%;
+    margin: auto;
 }
 .container {
     display: flex;
@@ -40,7 +53,7 @@ header h1 {
     text-align: center;
     margin: 1em auto;
     font-size: 46px;
-    padding: .4em 2em;
+    padding: .4em 1.5em;
     position: relative;
 }    
     
@@ -63,8 +76,9 @@ header h1 {
 
 .result  {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.3rem;
     font-weight: 700;
+    
 }
 
 
@@ -72,14 +86,16 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
     /* height: 300px; */
 }
 .choice {
     border: white solid 4px;
-    margin: 3em 1em;
+    margin: 2em .5em;
     border-radius: 50%;
-    padding: .5em;
+    padding: .4em;
     transition: all 300ms;
+    max-width: 100%;
 }
 
 .choice:hover {
@@ -131,9 +147,15 @@ header h1 {
     }
 }
 
-
-
-
-
+@media only screen and (min-width: 700px) {
+    :root {
+        font-size: 19px;
+    }
+    
+    .score-board {
+        padding: .4em 2em;
+    }    
+    
+}
 
 
